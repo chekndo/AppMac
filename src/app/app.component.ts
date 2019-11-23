@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AppMac';
+  title = 'MAC - Simulador de seguro de coches';
 }
