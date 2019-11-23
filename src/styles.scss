@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+.backgroundApp {
+    background-color: rgb(243, 65, 11);
+}
+.titleCenter {
+    text-align: center;
+}
+
+.subTitlePage {
+    font-size: 4.1vw;
+    color: rgb(255, 255, 255);
+    font-family: "Latin Modern Roman 10";
+    font-style: initial;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+}
+
+.borderStatus {
+    border: rgb(233, 80, 20) medium dashed;
+    border-collapse: collapse
+}
+
+.titleStatus {
+    font-size: 6.1vw;
+    color: rgb(255, 255, 255);
+    font-family: "Latin Modern Roman 10";
+    font-style: initial;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: initial;
+}

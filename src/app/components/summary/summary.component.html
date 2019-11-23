@@ -1,0 +1,39 @@
+<div class="container" *ngIf="!viewPersonalData && !viewInsuranceData && !viewAutomovileData">
+    <span class="subTitlePage">
+        {{ subtitle | titlecase }}
+    </span>
+    <a (click)="findClientValues()">Para probar datos recibidos</a>
+        <div class="borderStatus">
+        <p class="titleStatus"> Datos personales</p>
+        <p> Datos de la persona que va a contratar el segúro de automóvil.</p>
+        <p> Es necesario complimentar este estado para poder continuar.</p>
+        <a (click)="personalData()"> Editar datos personales > </a>
+    </div>
+    <div class="borderStatus">
+        <p class="titleStatus"> Datos del vehículo</p>
+        <p> Datos del automóvil sobre el que se quiere aplicar el seguro.</p>
+        <p> Es necesario complimentar este estado para poder continuar.</p>
+        <a (click)="automovilData()"> Editar datos del vehículos > </a>
+    </div>
+    <div class="borderStatus">
+        <p class="titleStatus"> Datos del seguro</p>
+        <p> Datos del seguro que quiero contratar.</p>
+        <p> Es necesario complimentar este estado para poder continuar.</p>
+        <a (click)="insuranceData()"> Editar datos del seguro > </a>
+    </div> 
+</div>
+<div *ngIf="viewPersonalData">
+    <app-personal-data
+        [personalData]='userData.personalData'
+    ></app-personal-data>
+</div>
+<div *ngIf="viewInsuranceData">
+    <app-insurance-data
+        [insuranceData]='userData.insuranceData'
+    ></app-insurance-data>
+</div>
+<div *ngIf="viewAutomovileData">
+    <app-automovile-data
+        [automovilData]='userData.automovilData'
+    ></app-automovile-data>
+</div>
